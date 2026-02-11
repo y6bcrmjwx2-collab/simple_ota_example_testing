@@ -36,6 +36,8 @@ void app_main(void)
         }
 
         gpio_set_level(BUILT_IN_LED, OFF);
-        vTaskDelay(pdMS_TO_TICKS(200));
+        vTaskDelay(pdMS_TO_TICKS(300));
     }
 }
+
+// esptool.py -p /dev/tty.usbmodem101 write_flash 0x20000 ./build/LED02.bin
