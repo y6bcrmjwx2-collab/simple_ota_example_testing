@@ -1,6 +1,6 @@
 # Embed the server root certificate into the final binary
 idf_build_get_property(project_dir PROJECT_DIR)
-idf_component_register(SRCS "LED02.c" "LED04.c" 
+idf_component_register(SRCS "LED02.c" 
                     INCLUDE_DIRS "."
                     )
 
